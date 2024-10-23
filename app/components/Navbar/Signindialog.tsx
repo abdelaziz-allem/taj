@@ -22,7 +22,6 @@ const Signin = () => {
           <button
             type="button"
             className="flex justify-end text-xl font-medium bg-pink text-white py-4 px-4 lg:px-8 navbutton rounded-full hover:text-white hover:bg-pink"
-            onClick={openModal}
           >
             Apply
           </button>

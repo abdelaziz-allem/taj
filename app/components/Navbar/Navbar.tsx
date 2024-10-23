@@ -83,7 +83,13 @@ const Navbar = () => {
                   />
                   <p className="text-lg font-medium">+252(63) 468-8444</p>
                 </div>
-                <Signindialog />
+                <button
+                  type="button"
+                  className="flex justify-end text-xl font-medium bg-pink text-white py-4 px-4 lg:px-8 navbutton rounded-full hover:text-white hover:bg-pink"
+                >
+                  Apply
+                </button>
+                {/* <Signindialog /> */}
               </div>
             </div>
 
