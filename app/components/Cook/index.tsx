@@ -56,9 +56,9 @@ const Cook = () => {
               triggerOnce={true}
             >
               <p className="text-grey md:text-lg font-normal mb-10 text-start mt-2">
-                Unlock your child's potential through transformative education.
-                Our approach nurtures critical skills and personal growth,
-                turning challenges into opportunities for success.
+                Unlock your child&apos;s potential through transformative
+                education. Our approach nurtures critical skills and personal
+                growth, turning challenges into opportunities for success.
               </p>
               <p className="text-grey md:text-lg font-normal mb-10 text-start ">
                 We create an engaging learning environment that prepares
