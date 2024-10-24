@@ -97,19 +97,19 @@ const Navbar = () => {
 
             {/* DRAWER ICON */}
 
-            <div className="block lg:hidden">
+            {/* <div className="block lg:hidden">
               <Bars3Icon
                 className="block h-6 w-6"
                 aria-hidden="true"
                 onClick={() => setIsOpen(true)}
               />
-            </div>
+            </div> */}
 
             {/* DRAWER LINKS DATA */}
 
-            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+            {/* <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
               <Drawerdata />
-            </Drawer>
+            </Drawer> */}
           </div>
         </div>
       </>
