@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 
 const About = () => {
@@ -71,9 +72,12 @@ const About = () => {
                 holistic education, we are shaping the leaders of tomorrow.
               </p>
               <div className="flex justify-center lg:justify-start">
-                <button className="text-xl font-medium rounded-full text-white py-4 px-8 bg-pink lg:px-10 hover:bg-lightpink hover:text-pink border border-pink transition duration-300">
+                <Link
+                  href={"/aboutus"}
+                  className="text-xl font-medium rounded-full text-white py-4 px-8 bg-pink lg:px-10 hover:bg-lightpink hover:text-pink border border-pink transition duration-300"
+                >
                   Learn More
-                </button>
+                </Link>
               </div>
             </Fade>
           </div>

@@ -45,7 +45,7 @@ const cardData: cardDataType[] = [
 const Work = () => {
   return (
     <div>
-      <div className="mx-auto max-w-7xl py-20 px-6" id="about-section">
+      <div className="mx-auto max-w-7xl py-20 px-6">
         <div className="text-center mb-14">
           <Fade
             direction={"up"}
