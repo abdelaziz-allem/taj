@@ -10,7 +10,7 @@ const About = () => {
           {/* School Logo */}
           <div className="col-span-6 flex justify-start items-center">
             <Image
-              src="/images/school/logo.PNG"
+              src="/images/Logo/logo.PNG"
               alt="Taj School Logo"
               width={650}
               height={1000}

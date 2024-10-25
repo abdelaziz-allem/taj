@@ -14,34 +14,19 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    profession: "Senior ",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/Expert/boyone.svg",
+    profession: "Math teacher ",
+    name: "Ahmed cisman",
+    imgSrc: "/images/Expert/teacher.png",
   },
   {
-    profession: "senior ",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/Expert/girl.png",
+    profession: "English teacher ",
+    name: "Ayaan ahmed",
+    imgSrc: "/images/Expert/teacher.png",
   },
   {
-    profession: "senior ",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/Expert/boytwo.svg",
-  },
-  {
-    profession: "senior ",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/Expert/girl.png",
-  },
-  {
-    profession: "senior ",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/Expert/girl.png",
-  },
-  {
-    profession: "senior ",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/Expert/girl.png",
+    profession: "Logic Teacher ",
+    name: "Farah ahmed",
+    imgSrc: "/images/Expert/teacher.png",
   },
 ];
 
@@ -103,7 +88,7 @@ export default class MultipleItems extends Component {
               triggerOnce={true}
             >
               <h2 className="text-pink text-lg font-normal mb-3 tracking-widest uppercase ls-51">
-                EXPERT S
+                Teachers
               </h2>
             </Fade>
             <Fade
@@ -123,12 +108,15 @@ export default class MultipleItems extends Component {
             {postData.map((items, i) => (
               <div key={i}>
                 <div className="m-3 py-14 my-10 text-center">
-                  {/* <div className="relative">
-                                        <Image src={items.imgSrc} alt="gaby" width={362} height={262} className="inline-block m-auto" />
-                                        <div className="absolute top-[50%] right-[2%]">
-                                            <Image src={'/images/Expert/Linkedin.svg'} alt="linkedin" width={220} height={120} />
-                                        </div>
-                                    </div> */}
+                  <div>
+                    <Image
+                      src={items.imgSrc}
+                      alt="gaby"
+                      width={300}
+                      height={300}
+                      className="inline-block m-auto"
+                    />
+                  </div>
                   <h3 className="text-2xl font-semibold text-lightblack">
                     {items.name}
                   </h3>

@@ -37,7 +37,7 @@ const Navbar = () => {
 
               <div className="flex sm:hidden flex-shrink-0 items-center border-right">
                 <Image
-                  src="/images/school/logo.PNG"
+                  src="/images/Logo/logo.PNG"
                   alt="logo"
                   width={150}
                   height={150}
@@ -45,7 +45,7 @@ const Navbar = () => {
               </div>
               <div className="hidden sm:flex flex-shrink-0 items-center border-right">
                 <Image
-                  src="/images/school/logo.PNG"
+                  src="/images/Logo/logo.PNG"
                   alt="logo"
                   width={300}
                   height={300}
@@ -97,19 +97,19 @@ const Navbar = () => {
 
             {/* DRAWER ICON */}
 
-            {/* <div className="block lg:hidden">
+            <div className="block lg:hidden">
               <Bars3Icon
                 className="block h-6 w-6"
                 aria-hidden="true"
                 onClick={() => setIsOpen(true)}
               />
-            </div> */}
+            </div>
 
             {/* DRAWER LINKS DATA */}
 
-            {/* <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
               <Drawerdata />
-            </Drawer> */}
+            </Drawer>
           </div>
         </div>
       </>
