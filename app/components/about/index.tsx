@@ -62,7 +62,7 @@ const About = () => {
                 promoting critical thinking and problem-solving skills. We
                 emphasize the importance of leadership, community service, and
                 preparing our students to become active contributors to
-                Somaliland’s development.
+                Somaliland&apos;s development.
               </p>
               <p className="text-grey md:text-lg font-normal mb-10">
                 At Taj School, we believe that every student has the potential

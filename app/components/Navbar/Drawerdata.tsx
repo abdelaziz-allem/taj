@@ -42,7 +42,7 @@ const Data = () => {
             ))}
             <div className="mt-4"></div>
             <button className="flex justify-center text-base w-full font-medium rounded-full bg-pink text-white py-3 px-4 lg:px-8 navbutton hover:text-white">
-              Apply
+              Contact us
             </button>
             <button className="flex justify-center text-base w-full font-medium rounded-full bg-transparent border border-bgpink text-pink py-3 px-4 lg:px-8 navbutton hover:text-white hover:bg-pink">
               +252(63) 468-8444

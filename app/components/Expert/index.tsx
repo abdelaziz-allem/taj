@@ -16,17 +16,17 @@ const postData: DataType[] = [
   {
     profession: "Math teacher ",
     name: "Ahmed cisman",
-    imgSrc: "/images/Expert/teacher.png",
+    imgSrc: "/images/Expert/demoteacher.png",
   },
   {
     profession: "English teacher ",
     name: "Ayaan ahmed",
-    imgSrc: "/images/Expert/teacher.png",
+    imgSrc: "/images/Expert/demoteacher.png",
   },
   {
     profession: "Logic Teacher ",
     name: "Farah ahmed",
-    imgSrc: "/images/Expert/teacher.png",
+    imgSrc: "/images/Expert/demoteacher.png",
   },
 ];
 
@@ -108,7 +108,7 @@ export default class MultipleItems extends Component {
             {postData.map((items, i) => (
               <div key={i}>
                 <div className="m-3 py-14 my-10 text-center">
-                  <div>
+                  <div className="bg-pink rounded-full">
                     <Image
                       src={items.imgSrc}
                       alt="gaby"
