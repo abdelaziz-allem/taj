@@ -18,7 +18,7 @@ const Cook = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 my-16 space-x-5">
           <div className="col-span-6 flex justify-start">
             <Image
-              src={"/images/school/smile.JPG"}
+              src={"/images/Gallery/image4.JPG"}
               alt="nothing"
               width={600}
               height={808}
