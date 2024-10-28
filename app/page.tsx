@@ -5,6 +5,7 @@ import Expert from "./components/Expert/index";
 import Gallery from "./components/Gallery/index";
 import Newsletter from "./components/Newsletter/Newsletter";
 import About from "./components/about";
+import Academics from "./components/academics";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Cook />
       <Expert />
+      <Academics />
       <Gallery />
       <Newsletter />
     </main>

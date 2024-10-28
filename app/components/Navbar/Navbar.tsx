@@ -1,11 +1,11 @@
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Menu } from "@headlessui/react";
 import Link from "next/link";
 import React from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signindialog from "./Signindialog";
 import Image from "next/image";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 interface NavigationItem {
   name: string;
@@ -30,11 +30,10 @@ const Navbar = () => {
   return (
     <Disclosure as="nav" className="navbar">
       <>
-        <div className="mx-auto max-w-7xl p-3 md:p-6 lg:px-8">
+        <div className="mx-auto   md:p-6 lg:px-8">
           <div className="relative flex h-12 sm:h-20 items-center">
-            <div className="flex flex-1 items-center sm:justify-between">
+            <div className="flex flex-1 items-center lg:justify-around sm:justify-between">
               {/* LOGO */}
-
               <div className="flex sm:hidden flex-shrink-0 items-center border-right">
                 <Image
                   src="/images/Logo/logo.PNG"
@@ -53,8 +52,7 @@ const Navbar = () => {
               </div>
 
               {/* LINKS */}
-
-              <div className="hidden lg:flex items-center border-right ">
+              <div className="hidden lg:flex items-center border-right">
                 <div className="flex justify-end space-x-4">
                   {navigation.map((item) => (
                     <Link
@@ -71,8 +69,62 @@ const Navbar = () => {
                       {item.name}
                     </Link>
                   ))}
+                  {/* Academics Dropdown */}
+                  <Menu as="div" className="relative inline-block text-left">
+                    <div className="flex items-center">
+                      <Menu.Button className="flex items-center px-3 py-4 rounded-md text-lg font-normal opacity-50 hover:text-black space-links">
+                        <span>Academics</span>
+                        <ChevronDownIcon className="w-5 h-5 ml-1 opacity-50 hover:text-black" />
+                      </Menu.Button>
+                    </div>
+
+                    <Menu.Items className="absolute z-10 mt-2 w-40 origin-top-right rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="#academics"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
+                            )}
+                          >
+                            Preschool
+                          </Link>
+                        )}
+                      </Menu.Item>
+
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="#academics"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "hover:bg-lightgrey2 hover:text-white block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Middle School
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="#academics"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
+                            )}
+                          >
+                            Highschool
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Menu>
                 </div>
               </div>
+
+              {/* Contact Section and Phone */}
               <div className="gap-6 hidden lg:flex">
                 <div className="flex items-center gap-2">
                   <Image
@@ -90,14 +142,10 @@ const Navbar = () => {
                 >
                   Contact Us
                 </Link>
-                {/* <Signindialog /> */}
               </div>
             </div>
 
             {/* DRAWER FOR MOBILE VIEW */}
-
-            {/* DRAWER ICON */}
-
             <div className="block lg:hidden">
               <Bars3Icon
                 className="block h-6 w-6"
@@ -105,9 +153,6 @@ const Navbar = () => {
                 onClick={() => setIsOpen(true)}
               />
             </div>
-
-            {/* DRAWER LINKS DATA */}
-
             <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
               <Drawerdata />
             </Drawer>
