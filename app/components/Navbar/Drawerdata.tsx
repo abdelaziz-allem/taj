@@ -41,7 +41,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Data = () => {
+const Data = ({ isOpen, setIsOpen }: any) => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const handleDropdownToggle = (name: string) => {
@@ -50,6 +50,7 @@ const Data = () => {
 
   const closeDropdown = () => {
     setOpenDropdown(null);
+    setIsOpen(false);
   };
 
   return (
