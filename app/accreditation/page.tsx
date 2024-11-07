@@ -74,7 +74,7 @@ const Accreditation = () => {
               </h3>
               <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
                 {/* Accreditation Image */}
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 bg-pink rounded-lg p-5">
                   <Image
                     src="/images/Logo/iao.jpg"
                     alt="Accreditation Illustration"

@@ -15,7 +15,7 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "#home-section", current: false },
-  { name: "About", href: "#about-section", current: false },
+  { name: "About us", href: "#about-section", current: false },
   { name: "Events", href: "#gallery-section", current: false },
 ];
 
@@ -179,6 +179,20 @@ const Navbar = () => {
                             )}
                           >
                             Tuition fee
+                          </Link>
+                        )}
+                      </Menu.Item>
+
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/curriculum"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
+                            )}
+                          >
+                            Curriculum
                           </Link>
                         )}
                       </Menu.Item>

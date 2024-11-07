@@ -11,7 +11,7 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "#home-section", current: false },
-  { name: "About", href: "#about-section", current: false },
+  { name: "About us", href: "#about-section", current: false },
   { name: "Events", href: "#gallery-section", current: false },
   {
     name: "Student",
@@ -30,7 +30,9 @@ const navigation: NavigationItem[] = [
       { name: "Grades", href: "#academics", current: false },
       { name: "Accreditation", href: "#accreditation", current: false },
       { name: "Tuition fee", href: "#tuition", current: false },
-      { name: "Criteria", href: "#criteria", current: false },
+      { name: "Acceptance criteria", href: "#criteria", current: false },
+      { name: " Code of Conduct", href: "#code-of-conduct", current: false },
+      { name: "Curriculum", href: "/curriculum", current: false },
     ],
   },
 ];

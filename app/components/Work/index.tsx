@@ -13,10 +13,10 @@ interface cardDataType {
 
 const cardData: cardDataType[] = [
   {
-    imgSrc: "/images/Features/logic.png",
-    heading: "Logic",
+    imgSrc: "/images/Features/quran.png",
+    heading: "Quran",
     subheading:
-      "Develop critical thinking and problem-solving skills that apply to everyday life and academic success.",
+      "The student studying Quran will be able to understand the Quran and its meaning, and will be able to read and comprehend the Quran.",
     link: "Learn more",
   },
   {
