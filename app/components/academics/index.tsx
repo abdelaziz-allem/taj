@@ -34,9 +34,6 @@ const Academics = () => {
                 play and exploration, we inspire a love for learning in young
                 minds.
               </p>
-              <button className="text-lg font-medium rounded-full text-white py-3 px-6 bg-pink-600 transition duration-200 hover:bg-pink-700">
-                Learn More
-              </button>
             </Fade>
           </div>
 
@@ -44,7 +41,7 @@ const Academics = () => {
           <div className="flex flex-col items-center max-w-md bg-lightblue bg-opacity-60 p-8 rounded-lg shadow-lg">
             <Fade direction="up" delay={400} cascade damping={0.1} triggerOnce>
               <h2 className="text-white text-lg font-bold mb-3 uppercase text-center">
-                Primary School
+                Lower Primary School
               </h2>
             </Fade>
             <Fade direction="up" delay={600} cascade damping={0.1} triggerOnce>
@@ -58,9 +55,6 @@ const Academics = () => {
                 growth, turning challenges into opportunities. We guide students
                 towards confident futures in a supportive learning environment.
               </p>
-              <button className="text-lg font-medium rounded-full text-white py-3 px-6 bg-pink-600 transition duration-200 hover:bg-pink-700">
-                Learn More
-              </button>
             </Fade>
           </div>
 
@@ -68,7 +62,7 @@ const Academics = () => {
           <div className="flex flex-col items-center max-w-md bg-pink2 bg-opacity-60 p-8 rounded-lg shadow-lg">
             <Fade direction="up" delay={400} cascade damping={0.1} triggerOnce>
               <h2 className="text-white text-lg font-bold mb-3 uppercase text-center">
-                High School
+                Upper Primary School
               </h2>
             </Fade>
             <Fade direction="up" delay={600} cascade damping={0.1} triggerOnce>
@@ -78,14 +72,11 @@ const Academics = () => {
             </Fade>
             <Fade direction="up" delay={800} cascade damping={0.1} triggerOnce>
               <p className="text-white text-base mb-6 text-center">
-                Our Highschool school program nurtures critical skills and
+                Our upper primary school program nurtures critical skills and
                 personal growth, turning challenges into opportunities. We guide
                 students towards confident futures in a supportive learning
                 environment.
               </p>
-              <button className="text-lg font-medium rounded-full text-white py-3 px-6 bg-pink-600 transition duration-200 hover:bg-pink-700">
-                Learn More
-              </button>
             </Fade>
           </div>
         </div>
