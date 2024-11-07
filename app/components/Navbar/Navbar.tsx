@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <Disclosure as="nav" className="navbar">
       <>
-        <div className="mx-auto   md:p-6 lg:px-8 z-100">
+        <div className="mx-auto   md:p-6 lg:px-8">
           <div className="relative flex h-12 sm:h-20 items-center">
             <div className="flex flex-1 items-center lg:justify-around sm:justify-between">
               {/* LOGO */}
@@ -178,7 +178,7 @@ const Navbar = () => {
                               "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
                             )}
                           >
-                            Tuition
+                            Tuition fee
                           </Link>
                         )}
                       </Menu.Item>

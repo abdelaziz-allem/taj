@@ -40,9 +40,9 @@ const CodeOfConduct = () => {
                 </h2>
                 <p className="text-lg font-light">
                   All students are expected to treat others with respect and
-                  kindness. This includes being mindful of other people's
-                  perspectives and refraining from any form of bullying,
-                  harassment, or discrimination.
+                  kindness. This includes being mindful of others perspectives
+                  and refraining from any form of bullying, harassment, or
+                  discrimination.
                 </p>
               </Fade>
             </div>

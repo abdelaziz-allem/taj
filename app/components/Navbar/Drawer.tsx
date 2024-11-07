@@ -44,9 +44,9 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
             />
           </header>
           <div
-            onClick={() => {
-              setIsOpen(false);
-            }}
+          // onClick={() => {
+          //   setIsOpen(false);
+          // }}
           >
             {children}
           </div>
