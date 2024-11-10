@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 
 const Transportation = () => {
@@ -60,6 +61,15 @@ const Transportation = () => {
                 can trust.
               </p>
             </Fade>
+
+            <div className="flex align-middle justify-center md:justify-start">
+              <Link
+                href={"/transportation"}
+                className="text-xl font-medium rounded-full text-white py-5 px-6 bg-pink lg:px-10 mr-6"
+              >
+                Learn more
+              </Link>
+            </div>
           </div>
         </div>
       </div>

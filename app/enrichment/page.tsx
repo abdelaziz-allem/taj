@@ -49,37 +49,9 @@ const Enrichment = () => {
             {/* Quran Memorization Image */}
             <div className="flex-shrink-0">
               <Image
-                src="/images/Gallery/quran_memorization.jpg"
+                src="/images/Features/quran.png"
                 alt="Quran Memorization"
-                width={500}
-                height={300}
-                priority
-              />
-            </div>
-          </div>
-
-          {/* Real-Life Coding Skills Program */}
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
-            <div className="flex-1 text-center lg:text-left space-y-6">
-              <Fade direction="up" delay={300} triggerOnce>
-                <h2 className="text-3xl font-semibold text-gray-800">
-                  Real-Life Coding Skills
-                </h2>
-                <p className="text-lg font-light">
-                  Our coding program introduces students to the fundamentals of
-                  programming in a hands-on, project-based environment. Students
-                  will learn to build real-world applications and understand the
-                  principles of technology that power modern life.
-                </p>
-              </Fade>
-            </div>
-
-            {/* Real-Life Coding Image */}
-            <div className="flex-shrink-0">
-              <Image
-                src="/images/Gallery/coding_skills.jpg"
-                alt="Real-Life Coding"
-                width={500}
+                width={300}
                 height={300}
                 priority
               />
@@ -91,14 +63,17 @@ const Enrichment = () => {
             <div className="flex-1 text-center lg:text-left space-y-6">
               <Fade direction="up" delay={300} triggerOnce>
                 <h2 className="text-3xl font-semibold text-gray-800">
-                  Practical Life Skills
+                  Learning Support Program
                 </h2>
                 <p className="text-lg font-light">
-                  This program equips students with essential skills like
-                  financial literacy, communication, teamwork, and problem
-                  solving. Through interactive activities, students gain
-                  insights into managing daily responsibilities and making
-                  informed decisions.
+                  Our Learning Support Program provides targeted assistance to
+                  students who may need extra help in specific subjects. Led by
+                  experienced teachers, this program offers personalized
+                  support, helping students strengthen their understanding of
+                  challenging material and build confidence in their academic
+                  abilities. By providing additional guidance and resources, we
+                  ensure that each learner has the tools they need to reach
+                  their full potential.
                 </p>
               </Fade>
             </div>
@@ -106,9 +81,9 @@ const Enrichment = () => {
             {/* Practical Life Skills Image */}
             <div className="flex-shrink-0">
               <Image
-                src="/images/Gallery/life_skills.jpg"
+                src="/images/Features/logic.png"
                 alt="Practical Life Skills"
-                width={500}
+                width={300}
                 height={300}
                 priority
               />

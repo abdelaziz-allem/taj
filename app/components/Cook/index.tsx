@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 
 const Cook = () => {
   return (
-    <div className="relative" id="cook-section">
+    <div className="relative" id="smile-section">
       <div className=" mx-auto max-w-7xl lg:pt-20 sm:pb-24 px-6">
         <div className="absolute right-0 bottom-[-18%] hidden lg:block">
           <Image
@@ -65,9 +66,12 @@ const Cook = () => {
                 students for a confident and bright future.
               </p>
               <div className="flex align-middle justify-center md:justify-start">
-                <button className="text-xl font-medium rounded-full text-white py-5 px-6 bg-pink lg:px-10 mr-6">
+                <Link
+                  href={"/grades"}
+                  className="text-xl font-medium rounded-full text-white py-5 px-6 bg-pink lg:px-10 mr-6"
+                >
                   Learn more
-                </button>
+                </Link>
               </div>
             </Fade>
           </div>

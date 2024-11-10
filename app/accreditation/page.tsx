@@ -70,7 +70,7 @@ const Accreditation = () => {
           <div className="mt-12">
             <Fade direction="up" delay={400} triggerOnce>
               <h3 className="text-3xl font-semibold text-center text-gray-800 mb-10">
-                Our Accredited Partners
+                International Accreditation Organization{" "}
               </h3>
               <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
                 {/* Accreditation Image */}
@@ -85,17 +85,17 @@ const Accreditation = () => {
                 <div className="flex-1 text-center lg:text-left space-y-6">
                   <Fade direction="up" delay={300} triggerOnce>
                     <p className="text-lg font-light">
-                      Accreditation from respected bodies signifies our
-                      commitment to maintaining high standards of education,
-                      transparency, and accountability. Our partnerships and
-                      recognitions affirm the quality of education we deliver
-                      and our dedication to continuous improvement.
+                      IAO is an international quality assurance agency, working
+                      to improve & establish education standards of institutes
+                      all over the world. With its global network of experts,
+                      IAO grants accreditation to educational institutions,
+                      corporations, professionals and qualified individuals.
                     </p>
                     <p className="text-lg font-light">
-                      These accreditations ensure our programs meet rigorous
-                      academic and ethical standards, providing students and
-                      parents with the confidence that they are receiving an
-                      education of the highest quality.
+                      IAO ensure our programs meet rigorous academic and ethical
+                      standards, providing students and parents with the
+                      confidence that they are receiving an education of the
+                      highest quality.
                     </p>
                   </Fade>
                 </div>

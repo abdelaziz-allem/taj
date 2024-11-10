@@ -27,7 +27,9 @@ module.exports = {
       darkgrey: "rgba(44, 9, 11, 0.8)",
       lightgrey2: "#66b2b2",
       pink2: "#FFC0CB",
+      pink3: "#AA336A",
       lightblue: "#ffffc5",
+      lightblue2: "#6A89A7",
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],

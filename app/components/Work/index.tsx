@@ -101,7 +101,7 @@ const Work = () => {
                 </div>
                 <div className="mt-4">
                   <Link
-                    href="/"
+                    href="/curriculum"
                     className="text-pink font-medium flex items-center space-x-1 hover:underline"
                   >
                     <span>{items.link}</span>

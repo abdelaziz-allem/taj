@@ -5,17 +5,17 @@ import Transportation from "./components/transportation/index";
 import Gallery from "./components/Gallery/index";
 import Newsletter from "./components/Newsletter/Newsletter";
 import About from "./components/about";
-import Academics from "./components/academics";
+import Grades from "./components/grades";
 
 export default function Home() {
   return (
     <main>
       <Banner />
-      <Features />
       <About />
+      <Features />
       <Cook />
       <Transportation />
-      <Academics />
+      <Grades />
       <Gallery />
       <Newsletter />
     </main>

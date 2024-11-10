@@ -28,7 +28,7 @@ const About = () => {
               triggerOnce={true}
             >
               <h2 className="text-pink text-lg font-normal uppercase tracking-wider">
-                About Taj School
+                Inspiring excellence
               </h2>
             </Fade>
             <Fade
@@ -39,7 +39,7 @@ const About = () => {
               triggerOnce={true}
             >
               <h3 className="text-3xl lg:text-5xl font-semibold text-black">
-                Empowering Students for a Brighter Future
+                Welcome to Taj International school
               </h3>
             </Fade>
             <Fade
@@ -50,26 +50,28 @@ const About = () => {
               triggerOnce={true}
             >
               <p className="text-grey md:text-lg font-normal">
-                Taj School, located in the heart of Somaliland, is dedicated to
-                providing a quality education that equips students with the
-                knowledge, skills, and character they need to succeed. With a
-                focus on academic excellence and personal growth, our school
-                offers a nurturing environment where students can thrive both
-                inside and outside the classroom.
+                We&apos;re delighted to welcome you to Taj International School,
+                where we are dedicated to providing an enriching, values-driven
+                education that shapes our students into well-rounded, confident,
+                and compassionate individuals. Since our founding in 2012, we’ve
+                been committed to fostering a love for learning, nurturing
+                Islamic values, and equipping students with the 21st-century
+                skills they need to excel in today&apos;s world.
               </p>
-              <p className="text-grey md:text-lg font-normal">
-                Our curriculum is designed to inspire a love for learning, while
-                promoting critical thinking and problem-solving skills. We
-                emphasize the importance of leadership, community service, and
-                preparing our students to become active contributors to
-                Somaliland&apos;s development.
+
+              <p className="text-grey md:text-lg font-normal mb-10">
+                At Taj, students thrive in a supportive, safe, and dynamic
+                environment that encourages them to reach their full potential
+                academically, socially, and spiritually. With a carefully
+                designed curriculum that includes English, Arabic, Somali, math,
+                sciences, and Islamic studies, we aim to build a strong
+                foundation that empowers students to lead with integrity,
+                resilience, and respect.
               </p>
               <p className="text-grey md:text-lg font-normal mb-10">
-                At Taj School, we believe that every student has the potential
-                to succeed, and we strive to provide the resources and
-                opportunities they need to achieve their dreams. With
-                experienced teachers, modern facilities, and a commitment to
-                holistic education, we are shaping the leaders of tomorrow.
+                Thank you for choosing Taj International School. We look forward
+                to partnering with you on this exciting journey of learning and
+                growth!
               </p>
               <div className="flex justify-center lg:justify-start">
                 <Link
