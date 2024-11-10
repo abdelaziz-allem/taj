@@ -6,6 +6,7 @@ import Gallery from "./components/Gallery/index";
 import Newsletter from "./components/Newsletter/Newsletter";
 import About from "./components/about";
 import Grades from "./components/grades";
+import Location from "./components/location/page";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Banner />
       <About />
       <Features />
+      <Location />
       <Cook />
       <Transportation />
       <Grades />
