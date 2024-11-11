@@ -15,7 +15,7 @@ const Banner = () => {
       <div className="relative z-10 text-center px-6">
         <Fade direction={"up"} delay={400} cascade damping={0.1} triggerOnce>
           <h1 className="text-4xl lg:text-6xl font-bold text-white mb-5">
-            Welcome to <br /> Taj International school!
+            Welcome to <br /> Taj International School!
           </h1>
         </Fade>
 
@@ -29,16 +29,22 @@ const Banner = () => {
         <Fade direction={"up"} delay={1000} cascade damping={0.1} triggerOnce>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              className="text-xl font-semibold rounded-full text-white py-4 px-8 bg-pink transition hover:bg-pink/80"
-              href="#about-section"
+              className="text-lg font-semibold rounded-full text-white py-3 px-8 bg-pink transition hover:bg-pink/80 hover:shadow-lg transform hover:-translate-y-1"
+              href="/admission"
             >
-              Why us?
+              Admission Process
             </Link>
             <Link
-              className="text-xl font-semibold rounded-full text-pink py-4 px-8 bg-white border border-pink transition hover:bg-pink hover:text-white"
+              className="text-lg font-semibold rounded-full text-white py-3 px-8 bg-pink transition hover:bg-pink/80 hover:shadow-lg transform hover:-translate-y-1"
+              href="/accreditation"
+            >
+              Accreditation
+            </Link>
+            <Link
+              className="text-lg font-semibold rounded-full text-white py-3 px-8 bg-pink transition hover:bg-pink/80 hover:shadow-lg transform hover:-translate-y-1"
               href="#contact"
             >
-              Contact us
+              Contact Us
             </Link>
           </div>
         </Fade>

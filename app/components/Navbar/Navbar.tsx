@@ -15,7 +15,7 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "#home-section", current: false },
-  { name: "News & Events", href: "#gallery-section", current: false },
+  // { name: "News & Events", href: "#gallery-section", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -74,6 +74,176 @@ const Navbar = () => {
                     </Link>
                   ))}
 
+                  <Menu as="div" className="relative inline-block text-left">
+                    <div className="flex items-center">
+                      <Menu.Button className="flex items-center  py-4 rounded-md text-md font-normal opacity-50 hover:text-black space-links">
+                        <span>About us</span>
+                        <ChevronDownIcon className="w-5 h-5 ml-1 opacity-50 hover:text-black" />
+                      </Menu.Button>
+                    </div>
+
+                    <Menu.Items className="absolute z-10 mt-2 w-40 origin-top-right rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/principle-message"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "hover:bg-lightgrey2 hover:text-white block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Priciple&apos;s message
+                          </Link>
+                        )}
+                      </Menu.Item>
+
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/aboutus"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
+                            )}
+                          >
+                            Mission, Vision & values
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/accreditation"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
+                            )}
+                          >
+                            Accreditation
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Menu>
+                  {/* Academics Dropdown */}
+                  <Menu as="div" className="relative inline-block text-left">
+                    <div className="flex items-center">
+                      <Menu.Button className="flex items-center  py-4 rounded-md text-md font-normal opacity-50 hover:text-black space-links">
+                        <span>Academics</span>
+                        <ChevronDownIcon className="w-5 h-5 ml-1 opacity-50 hover:text-black" />
+                      </Menu.Button>
+                    </div>
+
+                    <Menu.Items className="absolute z-10 mt-2 w-40 origin-top-right rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/grades"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
+                            )}
+                          >
+                            Grade levels
+                          </Link>
+                        )}
+                      </Menu.Item>
+
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/curriculum"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "hover:bg-lightgrey2 hover:text-white block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Curriculum overview
+                          </Link>
+                        )}
+                      </Menu.Item>
+
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/taj-education"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "hover:bg-lightgrey2 hover:text-white block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Taj education
+                          </Link>
+                        )}
+                      </Menu.Item>
+
+                      {/* <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/criteria"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
+                            )}
+                          >
+                            Acceptance criteria
+                          </Link>
+                        )}
+                      </Menu.Item> */}
+                    </Menu.Items>
+                  </Menu>
+
+                  <Menu as="div" className="relative inline-block text-left">
+                    <div className="flex items-center">
+                      <Menu.Button className="flex items-center  py-4 rounded-md text-md font-normal opacity-50 hover:text-black space-links">
+                        <span>Admission</span>
+                        <ChevronDownIcon className="w-5 h-5 ml-1 opacity-50 hover:text-black" />
+                      </Menu.Button>
+                    </div>
+
+                    <Menu.Items className="absolute z-10 mt-2 w-40 origin-top-right rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/admission"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "hover:bg-lightgrey2 hover:text-white block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Admission process
+                          </Link>
+                        )}
+                      </Menu.Item>
+
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/tuitionfee"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
+                            )}
+                          >
+                            Tuition fee
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/why-us"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
+                            )}
+                          >
+                            Why Taj international school?
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Menu>
                   <Menu as="div" className="relative inline-block text-left">
                     <div className="flex items-center">
                       <Menu.Button className="flex items-center  py-4 rounded-md text-md font-normal opacity-50 hover:text-black space-links">
@@ -184,109 +354,6 @@ const Navbar = () => {
                   <Menu as="div" className="relative inline-block text-left">
                     <div className="flex items-center">
                       <Menu.Button className="flex items-center  py-4 rounded-md text-md font-normal opacity-50 hover:text-black space-links">
-                        <span>Admission</span>
-                        <ChevronDownIcon className="w-5 h-5 ml-1 opacity-50 hover:text-black" />
-                      </Menu.Button>
-                    </div>
-
-                    <Menu.Items className="absolute z-10 mt-2 w-40 origin-top-right rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            href="/admission"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "hover:bg-lightgrey2 hover:text-white block px-4 py-2 text-sm text-gray-700"
-                            )}
-                          >
-                            Admission process
-                          </Link>
-                        )}
-                      </Menu.Item>
-
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            href="/tuitionfee"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
-                            )}
-                          >
-                            Tuition fee
-                          </Link>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            href="/aboutus#why-choose-us"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
-                            )}
-                          >
-                            Why Taj internation school?
-                          </Link>
-                        )}
-                      </Menu.Item>
-                    </Menu.Items>
-                  </Menu>
-
-                  <Menu as="div" className="relative inline-block text-left">
-                    <div className="flex items-center">
-                      <Menu.Button className="flex items-center  py-4 rounded-md text-md font-normal opacity-50 hover:text-black space-links">
-                        <span>About us</span>
-                        <ChevronDownIcon className="w-5 h-5 ml-1 opacity-50 hover:text-black" />
-                      </Menu.Button>
-                    </div>
-
-                    <Menu.Items className="absolute z-10 mt-2 w-40 origin-top-right rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            href="/aboutus#message"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "hover:bg-lightgrey2 hover:text-white block px-4 py-2 text-sm text-gray-700"
-                            )}
-                          >
-                            Priciple&apos;s message
-                          </Link>
-                        )}
-                      </Menu.Item>
-
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            href="/aboutus#aboutus-section"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
-                            )}
-                          >
-                            Mission & Vision
-                          </Link>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            href="/accreditation"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
-                            )}
-                          >
-                            Accreditation
-                          </Link>
-                        )}
-                      </Menu.Item>
-                    </Menu.Items>
-                  </Menu>
-                  <Menu as="div" className="relative inline-block text-left">
-                    <div className="flex items-center">
-                      <Menu.Button className="flex items-center  py-4 rounded-md text-md font-normal opacity-50 hover:text-black space-links">
                         <span>Student Life</span>
                         <ChevronDownIcon className="w-5 h-5 ml-1 opacity-50 hover:text-black" />
                       </Menu.Button>
@@ -360,59 +427,6 @@ const Navbar = () => {
                           </Link>
                         )}
                       </Menu.Item>
-                    </Menu.Items>
-                  </Menu>
-                  {/* Academics Dropdown */}
-                  <Menu as="div" className="relative inline-block text-left">
-                    <div className="flex items-center">
-                      <Menu.Button className="flex items-center  py-4 rounded-md text-md font-normal opacity-50 hover:text-black space-links">
-                        <span>Academics</span>
-                        <ChevronDownIcon className="w-5 h-5 ml-1 opacity-50 hover:text-black" />
-                      </Menu.Button>
-                    </div>
-
-                    <Menu.Items className="absolute z-10 mt-2 w-40 origin-top-right rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            href="/grades"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
-                            )}
-                          >
-                            Grade levels
-                          </Link>
-                        )}
-                      </Menu.Item>
-
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            href="/curriculum"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "hover:bg-lightgrey2 hover:text-white block px-4 py-2 text-sm text-gray-700"
-                            )}
-                          >
-                            Curriculum overview
-                          </Link>
-                        )}
-                      </Menu.Item>
-
-                      {/* <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            href="/criteria"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700 hover:bg-lightgrey2 hover:text-white"
-                            )}
-                          >
-                            Acceptance criteria
-                          </Link>
-                        )}
-                      </Menu.Item> */}
                     </Menu.Items>
                   </Menu>
                 </div>

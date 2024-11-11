@@ -12,41 +12,52 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "#home-section", current: false },
-  { name: "Events", href: "#gallery-section", current: false },
-  {
-    name: "Student life",
-    current: false,
-    subItems: [
-      { name: "Transportation", href: "/transportation", current: false },
-      { name: "Enrichments", href: "/enrichment", current: false },
-      { name: "Code of Conduct", href: "/code-of-conduct", current: false },
-      { name: "Student goverment", href: "/student-goverment", current: false },
-      { name: "Uniform", href: "/uniform", current: false },
-    ],
-  },
-  {
-    name: "Academics",
-    current: false,
-    subItems: [
-      { name: "Curriculum", href: "/curriculum", current: false },
-      { name: "Grades", href: "/grades", current: false },
-      { name: "Accreditation", href: "/accreditation", current: false },
-      { name: "Tuition fee", href: "/tuitionfee", current: false },
-    ],
-  },
   {
     name: "About us",
     current: false,
     subItems: [
-      { name: "Principal message", href: "/aboutus#message", current: false },
+      { name: "Principal message", href: "/principle-message", current: false },
       {
-        name: "Mission & Vision",
+        name: "Mission,Vision & Values",
         href: "/aboutus#aboutus-section",
         current: false,
       },
       { name: "Accreditation", href: "/accreditation", current: false },
     ],
   },
+
+  {
+    name: "Academics",
+    current: false,
+    subItems: [
+      { name: "Curriculum", href: "/curriculum", current: false },
+      { name: "Grades", href: "/grades", current: false },
+      { name: "Taj Education", href: "/taj-education", current: false },
+    ],
+  },
+  {
+    name: "Admission",
+    href: "/admission",
+    current: false,
+    subItems: [
+      {
+        name: "Admission process",
+        href: "/admission",
+        current: false,
+      },
+      {
+        name: "Tuition fee",
+        href: "/tuitionfee",
+        current: false,
+      },
+      {
+        name: "Why Taj",
+        href: "/why-us",
+        current: false,
+      },
+    ],
+  },
+
   {
     name: "Facilities",
     current: false,
@@ -76,28 +87,20 @@ const navigation: NavigationItem[] = [
       { name: "Canteen", href: "/facilities#canteen", current: false },
     ],
   },
+
   {
-    name: "Admission",
-    href: "/admission",
+    name: "Student life",
     current: false,
     subItems: [
-      {
-        name: "Admission process",
-        href: "/admission",
-        current: false,
-      },
-      {
-        name: "Tuition fee",
-        href: "/tuitionfee",
-        current: false,
-      },
-      {
-        name: "About us",
-        href: "/aboutus#why-choose-us",
-        current: false,
-      },
+      { name: "Transportation", href: "/transportation", current: false },
+      { name: "Enrichments", href: "/enrichment", current: false },
+      { name: "Code of Conduct", href: "/code-of-conduct", current: false },
+      { name: "Student goverment", href: "/student-goverment", current: false },
+      { name: "Uniform", href: "/uniform", current: false },
     ],
   },
+
+  { name: "Events", href: "#gallery-section", current: false },
 ];
 
 function classNames(...classes: string[]) {

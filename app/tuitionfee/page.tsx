@@ -35,9 +35,10 @@ const TuitionFee = () => {
                 Registration Fee
               </h2>
               <p className="text-lg font-light">
-                A one-time, non-refundable registration fee of{" "}
-                <strong>$50</strong> is required upon enrollment for new
-                students.
+                A one-time,{" "}
+                <strong className="font-bold">non-refundable</strong>{" "}
+                registration fee of <strong className="font-bold">$50</strong>{" "}
+                is required upon enrollment for new students.
               </p>
             </Fade>
           </div>
@@ -88,8 +89,11 @@ const TuitionFee = () => {
               </h2>
               <p className="text-lg font-light">
                 Our quarterly payment plan offers a discounted rate for families
-                who prefer to pay in advance, with fees due in August, November,
-                February, and May.
+                who prefer to pay in advance, with fees due in{" "}
+                <strong className="font-bold">August</strong>,{" "}
+                <strong className="font-bold">November</strong>,{" "}
+                <strong className="font-bold">February</strong>, and in{" "}
+                <strong className="font-bold">May</strong>.
               </p>
               <table className="text-left mx-auto  lg:mx-0 mt-4">
                 <thead>
@@ -117,15 +121,22 @@ const TuitionFee = () => {
           </div>
 
           {/* Additional Information Section */}
-          <div className="mt-12 text-center">
+          <div className="my-12 text-center">
             <Fade direction="up" delay={400} triggerOnce>
               <h3 className="text-3xl font-semibold text-gray-800 mb-10">
-                Additional Fees & Payment Methods
+                Additional Fees
               </h3>
               <p className="text-lg font-light mb-4">
                 Certain activities or events may have associated fees, depending
                 on costs. Families will be notified in advance of any such fees.
               </p>
+            </Fade>
+
+            <Fade direction="up" delay={400} triggerOnce>
+              <h3 className="text-3xl font-semibold text-gray-800 my-10">
+                Payment Methods
+              </h3>
+
               <p className="text-lg font-light mb-4">
                 We offer several convenient payment options to accommodate all
                 families:

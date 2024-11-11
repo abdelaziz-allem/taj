@@ -106,10 +106,12 @@ const Admission = () => {
                   Step 4: Transfer Documentation
                 </div>
                 <p className="text-lg font-light">
-                  For transfers, please provide a Transfer Letter from the
-                  Ministry of Education and a Letter of Conduct from the
-                  previous school, which reflects your child’s behavior and
-                  attitude.
+                  For transfers, please provide a{" "}
+                  <strong className="font-bold">Transfer Letter</strong> from
+                  the Ministry of Education and a{" "}
+                  <strong className="font-bold">Letter of Conduct</strong> from
+                  the previous school, which reflects your child&apos;s behavior
+                  and attitude.
                 </p>
               </div>
 

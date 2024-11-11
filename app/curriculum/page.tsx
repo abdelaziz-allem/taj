@@ -47,19 +47,22 @@ const Curriculum = () => {
                 </p>
                 <ul className="text-lg font-light list-disc list-inside space-y-2">
                   <li>
-                    <strong>English</strong>: As a global language, English
-                    opens doors to international knowledge, enabling our
-                    students to engage with worldwide information and resources.
+                    <strong className="font-bold">English</strong>: As a global
+                    language, English opens doors to international knowledge,
+                    enabling our students to engage with worldwide information
+                    and resources.
                   </li>
                   <li>
-                    <strong>Arabic</strong>: Supports a deeper understanding of
-                    Islamic studies and strengthens ties with the Arab world,
-                    sharing significant cultural and historical connections.
+                    <strong className="font-bold">Arabic</strong>: Supports a
+                    deeper understanding of Islamic studies and strengthens ties
+                    with the Arab world, sharing significant cultural and
+                    historical connections.
                   </li>
                   <li>
-                    <strong>Somali</strong>: Our national language preserves
-                    cultural heritage, grounding students in their identity and
-                    enabling effective community communication.
+                    <strong className="font-bold">Somali</strong>: Our national
+                    language preserves cultural heritage, grounding students in
+                    their identity and enabling effective community
+                    communication.
                   </li>
                 </ul>
               </Fade>
@@ -92,21 +95,23 @@ const Curriculum = () => {
                     </p>
                     <ul className="text-lg font-light list-disc list-inside space-y-2">
                       <li>
-                        <strong>Math, Sciences, and Computer Studies</strong>:
-                        Core STEAM subjects prepare students with analytical and
-                        problem-solving skills critical for academic and career
-                        success.
+                        <strong className="font-bold">
+                          Math, Sciences, and Computer Studies
+                        </strong>
+                        : Core STEAM subjects prepare students with analytical
+                        and problem-solving skills critical for academic and
+                        career success.
                       </li>
                       <li>
-                        <strong>Islamic Studies</strong>: Provides a strong
-                        moral and spiritual foundation, guiding students in both
-                        life and afterlife.
+                        <strong className="font-bold">Islamic Studies</strong>:
+                        Provides a strong moral and spiritual foundation,
+                        guiding students in both life and afterlife.
                       </li>
                       <li>
-                        <strong>Social Studies</strong>: Offers a well-rounded
-                        perspective on history, society, and geography, linking
-                        past knowledge with current challenges to shape a better
-                        future.
+                        <strong className="font-bold">Social Studies</strong>:
+                        Offers a well-rounded perspective on history, society,
+                        and geography, linking past knowledge with current
+                        challenges to shape a better future.
                       </li>
                     </ul>
                     <p className="text-lg font-light">
@@ -129,6 +134,19 @@ const Curriculum = () => {
                 </div>
               </div>
             </Fade>
+          </div>
+          <div className="py-16 px-6 lg:px-0">
+            <h2 className="text-pink text-lg font-normal mb-3 ls-31 uppercase text-center">
+              Inspiring Excellence
+            </h2>
+            <p className="mt-4 text-lg lg:text-xl font-light">
+              Our structured, holistic curriculum supports each student&apos;s
+              growth and development at every stage, guiding them towards
+              excellence in academics, personal integrity, and a lifelong love
+              for learning. Through Taj Education, we are dedicated to preparing
+              students to thrive as skilled, ethical, and proactive members of
+              their communities.
+            </p>
           </div>
         </div>
       </div>
