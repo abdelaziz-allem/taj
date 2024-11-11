@@ -34,12 +34,7 @@ const Banner = () => {
             >
               Admission Process
             </Link>
-            <Link
-              className="text-lg font-semibold rounded-full text-white py-3 px-8 bg-pink transition hover:bg-pink/80 hover:shadow-lg transform hover:-translate-y-1"
-              href="/accreditation"
-            >
-              Accreditation
-            </Link>
+
             <Link
               className="text-lg font-semibold rounded-full text-white py-3 px-8 bg-pink transition hover:bg-pink/80 hover:shadow-lg transform hover:-translate-y-1"
               href="#contact"

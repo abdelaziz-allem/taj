@@ -83,18 +83,16 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Google Maps Embed */}
-      <div className="my-8">
-        <h4 className="text-lg font-semibold text-center mb-4">Our Location</h4>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.3901541052787!2d44.03846117502558!3d9.561596090522539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1628bf24841a8577%3A0xf1f57e744493bb9a!2sTaj%20International%20School!5e0!3m2!1sen!2sus!4v1731144375674!5m2!1sen!2sus"
-          width="100%"
-          height="250"
-          className="border-0 w-full"
-          allowFullScreen
-          loading="lazy"
-          title="Taj School Location"
-        ></iframe>
+      {/* Accreditation Section */}
+      <div className="my-8 text-center">
+        <p className="text-sm font-medium text-darkgrey mb-2">Accredited by</p>
+        <Image
+          src="/images/Logo/iao.jpg"
+          alt="Accreditation Logo"
+          width={300} // Adjust width as needed
+          height={50} // Adjust height as needed
+          className="mx-auto"
+        />
       </div>
     </div>
   );

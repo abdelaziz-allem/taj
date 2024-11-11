@@ -244,7 +244,7 @@ const Navbar = () => {
                       </Menu.Item>
                     </Menu.Items>
                   </Menu>
-                  <Menu as="div" className="relative inline-block text-left">
+                  {/* <Menu as="div" className="relative inline-block text-left">
                     <div className="flex items-center">
                       <Menu.Button className="flex items-center  py-4 rounded-md text-md font-normal opacity-50 hover:text-black space-links">
                         <span>Facilities</span>
@@ -349,7 +349,7 @@ const Navbar = () => {
                         )}
                       </Menu.Item>
                     </Menu.Items>
-                  </Menu>
+                  </Menu> */}
 
                   <Menu as="div" className="relative inline-block text-left">
                     <div className="flex items-center">
@@ -441,7 +441,7 @@ const Navbar = () => {
                     width={10}
                     height={10}
                   />
-                  <p className="text-sm font-medium">+252(63) 468-8444</p>
+                  <p className="text-sm font-medium">+252 63 4829666</p>
                 </div>
                 <Link
                   href={"#contact"}

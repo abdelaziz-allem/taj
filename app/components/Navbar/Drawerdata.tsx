@@ -58,35 +58,35 @@ const navigation: NavigationItem[] = [
     ],
   },
 
-  {
-    name: "Facilities",
-    current: false,
-    subItems: [
-      { name: "classroom", href: "/facilities", current: false },
-      { name: "Library", href: "/facilities#library", current: false },
-      {
-        name: "Computer Lab",
-        href: "/facilities#computerlab",
-        current: false,
-      },
-      {
-        name: "School Clinic",
-        href: "/facilities#clinic",
-        current: false,
-      },
-      {
-        name: "Play-Grounds",
-        href: "/facilities#playground",
-        current: false,
-      },
-      {
-        name: "Multi-purpose Space",
-        href: "/facilities#space",
-        current: false,
-      },
-      { name: "Canteen", href: "/facilities#canteen", current: false },
-    ],
-  },
+  // {
+  //   name: "Facilities",
+  //   current: false,
+  //   subItems: [
+  //     { name: "classroom", href: "/facilities", current: false },
+  //     { name: "Library", href: "/facilities#library", current: false },
+  //     {
+  //       name: "Computer Lab",
+  //       href: "/facilities#computerlab",
+  //       current: false,
+  //     },
+  //     {
+  //       name: "School Clinic",
+  //       href: "/facilities#clinic",
+  //       current: false,
+  //     },
+  //     {
+  //       name: "Play-Grounds",
+  //       href: "/facilities#playground",
+  //       current: false,
+  //     },
+  //     {
+  //       name: "Multi-purpose Space",
+  //       href: "/facilities#space",
+  //       current: false,
+  //     },
+  //     { name: "Canteen", href: "/facilities#canteen", current: false },
+  //   ],
+  // },
 
   {
     name: "Student life",
