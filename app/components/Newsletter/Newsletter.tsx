@@ -1,8 +1,48 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 
 const Newsletter = () => {
+  const [formData, setFormData] = useState({
+    fullname: "",
+    email: "",
+    messagetext: "",
+  });
+  const [status, setStatus] = useState(""); // This will store the status message
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    setStatus(""); // Reset any previous status message before sending the request
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus("Message sent successfully!"); // Success message
+        setFormData({ fullname: "", email: "", messagetext: "" }); // Clear form fields
+      } else {
+        setStatus("Something went wrong. Please try again."); // Error message from the response or default
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setStatus("Error sending message. Please try again later."); // General error message
+    }
+  };
+
   return (
     <div className="relative" id="contact">
       <div className="mx-auto max-w-2xl bg-pink br-50 md:max-w-7xl mt-48 rounded-lg">
@@ -18,8 +58,7 @@ const Newsletter = () => {
                 triggerOnce={true}
               >
                 <h3 className="text-lg font-normal text-white mb-3 ls-51">
-                  {" "}
-                  Contact us{" "}
+                  Contact us
                 </h3>
               </Fade>
               <Fade
@@ -42,23 +81,32 @@ const Newsletter = () => {
                   damping={1e-1}
                   triggerOnce={true}
                 >
-                  <div className=" text-white focus-within:text-white flex flex-col gap-5 justify-center  rounded-full">
+                  <form
+                    onSubmit={handleSubmit}
+                    className=" text-white focus-within:text-white flex flex-col gap-5 justify-center  rounded-full"
+                  >
                     <input
-                      type="number"
-                      name="phone"
+                      type="text"
+                      name="fullname"
                       className="py-6 sm:py-8 text-sm w-full text-black bg-gray-900 rounded-full pl-4 par-87 focus:outline-none focus:text-black"
-                      placeholder="# enter your phone number"
+                      placeholder="enter your full name"
                       autoComplete="off"
+                      value={formData.fullname}
+                      onChange={handleChange}
                     />
                     <input
-                      type="Email address"
+                      type="email"
                       name="email"
                       className="py-6 sm:py-8 text-sm w-full text-black bg-gray-900 rounded-full pl-4 par-87 focus:outline-none focus:text-black"
                       placeholder="@ enter your email-address"
                       autoComplete="off"
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                     <textarea
-                      name="message"
+                      name="messagetext"
+                      value={formData.messagetext}
+                      onChange={handleChange}
                       className="py-6 sm:py-8 text-sm w-full text-black bg-gray-900 rounded-full pl-4 par-87 focus:outline-none focus:text-black"
                       placeholder="write us a message"
                     />
@@ -71,9 +119,20 @@ const Newsletter = () => {
                         Send
                       </button>
                     </div>
-                  </div>
+                  </form>
                 </Fade>
               </div>
+
+              {/* Status message (Success or Error) */}
+              {status && (
+                <div
+                  className={`mt-4 text-center text-lg font-semibold bg-white p-4 rounded-full ${
+                    status.includes("success") ? "text-pink" : "text-pink3"
+                  }`}
+                >
+                  {status}
+                </div>
+              )}
             </div>
           </div>
 

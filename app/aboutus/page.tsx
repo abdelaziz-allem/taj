@@ -57,38 +57,40 @@ const AboutUs = () => {
             <h2 className="text-3xl font-semibold text-pink">Our Values</h2>
             <ul className="space-y-4 text-lg font-light list-disc list-inside">
               <li>
-                <strong>Excellence:</strong> We strive for excellence in
-                academics, extracurricular activities, and personal growth,
-                encouraging every individual to reach their highest potential.
+                <strong className="font-bold">Excellence:</strong> We strive for
+                excellence in academics, extracurricular activities, and
+                personal growth, encouraging every individual to reach their
+                highest potential.
               </li>
               <li>
-                <strong>Respect:</strong> We value every member of our school
-                community and treat all with dignity and respect.
+                <strong className="font-bold">Respect:</strong> We value every
+                member of our school community and treat all with dignity and
+                respect.
               </li>
               <li>
-                <strong>Responsibility:</strong> We embrace responsibility in
-                all our actions, fostering accountability and commitment in our
-                students.
+                <strong className="font-bold">Responsibility:</strong> We
+                embrace responsibility in all our actions, fostering
+                accountability and commitment in our students.
               </li>
               <li>
-                <strong>Integrity:</strong> Honesty and transparency guide our
-                interactions and decisions, building trust within and beyond our
-                school community.
+                <strong className="font-bold">Integrity:</strong> Honesty and
+                transparency guide our interactions and decisions, building
+                trust within and beyond our school community.
               </li>
               <li>
-                <strong>Selflessness:</strong> We foster a collaborative spirit,
-                where each individual acts with loyalty and support for the
-                greater good, embodying unity and teamwork.
+                <strong className="font-bold">Selflessness:</strong> We foster a
+                collaborative spirit, where each individual acts with loyalty
+                and support for the greater good, embodying unity and teamwork.
               </li>
               <li>
-                <strong>Grit:</strong> We value resilience and perseverance,
-                cultivating a growth mindset that encourages students to tackle
-                challenges with determination.
+                <strong className="font-bold">Grit:</strong> We value resilience
+                and perseverance, cultivating a growth mindset that encourages
+                students to tackle challenges with determination.
               </li>
               <li>
-                <strong>Discipline:</strong> We instill the importance of
-                self-discipline and commitment, empowering students to stay
-                focused and achieve their goals.
+                <strong className="font-bold">Discipline:</strong> We instill
+                the importance of self-discipline and commitment, empowering
+                students to stay focused and achieve their goals.
               </li>
             </ul>
           </Fade>

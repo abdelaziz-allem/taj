@@ -24,9 +24,10 @@ const socialLinks: SocialLink[] = [
     link: "https://www.instagram.com/tajschools/?hl=en",
     width: 14,
   },
+
   {
     imgSrc: "/images/Footer/twitter.svg",
-    link: "https://twitter.com/tajschools",
+    link: "https://x.com/TajIntlSchool?t=-tSH3UZmfqk3lijdkmnxkQ&s=09",
     width: 14,
   },
 ];
@@ -60,7 +61,12 @@ const Footer = () => {
 
         <div className="flex gap-4">
           {products.map((item, i) => (
-            <Link className="hover:underline" href={item.link} key={i} passHref>
+            <Link
+              className="text-pink text-light-pink underline"
+              href={item.link}
+              key={i}
+              passHref
+            >
               {item.section}
             </Link>
           ))}

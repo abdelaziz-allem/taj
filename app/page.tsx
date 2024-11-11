@@ -16,7 +16,7 @@ export default function Home() {
       <Features />
       <Location />
       <Cook />
-      <Transportation />
+      {/* <Transportation /> */}
       <Grades />
       <Gallery />
       <Newsletter />
