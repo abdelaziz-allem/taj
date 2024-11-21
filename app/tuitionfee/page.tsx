@@ -73,6 +73,11 @@ const TuitionFee = () => {
                   </tr>
 
                   <tr>
+                    <td>July fees </td>
+                    <td>$7</td>
+                  </tr>
+
+                  <tr>
                     <td className="font-semibold">Total</td>
                     <td className="font-semibold">$102</td>
                   </tr>
