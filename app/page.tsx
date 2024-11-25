@@ -1,12 +1,12 @@
 import Banner from "./components/Banner/index";
 import Features from "./components/Work/index";
-import Cook from "./components/Cook/index";
 import Transportation from "./components/transportation/index";
 import Gallery from "./components/Gallery/index";
 import Newsletter from "./components/Newsletter/Newsletter";
 import About from "./components/about";
 import Grades from "./components/grades";
 import Location from "./components/location/page";
+import Smile from "./components/Smile/index";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <About />
       <Features />
       <Location />
-      <Cook />
+      <Smile />
       {/* <Transportation /> */}
       <Grades />
       <Gallery />

@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 
-const Cook = () => {
+const Smile = () => {
   return (
     <div className="relative" id="smile-section">
       <div className=" mx-auto max-w-7xl lg:pt-20 sm:pb-24 px-6">
         <div className="absolute right-0 bottom-[-18%] hidden lg:block">
           <Image
-            src={"/images/Cook/items.png"}
+            src={"/images/items.png"}
             alt="burger-image"
             width={463}
             height={622}
@@ -81,4 +81,4 @@ const Cook = () => {
   );
 };
 
-export default Cook;
+export default Smile;
