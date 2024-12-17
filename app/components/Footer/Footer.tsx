@@ -90,16 +90,16 @@ const Footer = () => {
       </div>
 
       {/* Accreditation Section */}
-      <div className="my-8 text-center">
+      <Link href={"https://www.iao.org/Somaliland-Maroodi-Jeex/Taj-International-School"} className="my-8 text-center">
         <p className="text-sm font-medium text-darkgrey mb-2">Accredited by</p>
         <Image
           src="/images/Logo/iao.jpg"
           alt="Accreditation Logo"
-          width={300} // Adjust width as needed
-          height={50} // Adjust height as needed
+          width={300}
+          height={50}
           className="mx-auto"
         />
-      </div>
+      </Link>
     </div>
   );
 };
